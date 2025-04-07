@@ -18,6 +18,12 @@ Read these resources before carrying on!
 1. Once you give it a name, you will get an ApiKey which you need to add as an environment variable (I named by environment variable `SENDGRID_API_KEY` as suggested by SendGrid).
 1. The SendGrid platform will guide you to add a verified sender. This is the address from which you will send your emails. I used my Gmail.
 
+### If SendGrid doesn't work.
+1. Use Gmail with MailKit to send SMTP requests.
+1. Create an app password: https://myaccount.google.com/apppasswords
+1. Use the MailKit nuget package: https://www.nuget.org/packages/mailkit/
+1. Delete app password once done.
+
 ### Create a Minimal API project
 1. ```dotnet new webapi -o EmailService```
 1. Once the project is created, run it and you will see it's similar to an API to the end user.
